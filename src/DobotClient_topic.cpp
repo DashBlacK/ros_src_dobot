@@ -32,7 +32,7 @@ void poseCallback(const geometry_msgs::Pose& msg)
   srv_s.request.z = msg.position.z;
   //srv_s.request.r = msg.orientation.x;
   srv2.request.enableCtrl = 1;
-  srv2.request.isQueued = 1;
+  srv2.request.isQueued = 0;
   srv2.request.grip = msg.orientation.x;
   client_sub.call(srv_s);   
   //SetEndEffectorGripper(1, 0, 0, 0);
