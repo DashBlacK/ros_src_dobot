@@ -132,6 +132,7 @@ int main(int argc, char **argv)
     //client = n.serviceClient<dobot::SetPTPCmd>("/DobotServer/SetPTPCmd");
     //dobot::SetPTPCmd srv;
     
+    // Subscribe to topic
     ros::Subscriber geom = n.subscribe("geometry_pose", 1000, poseCallback);
     ros::spin();
 
