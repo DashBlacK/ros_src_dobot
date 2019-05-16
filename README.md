@@ -1,2 +1,2 @@
-# ros_src_dobot
+# ros_src_dobot_magician
 DOBOT Magician ROS stack
